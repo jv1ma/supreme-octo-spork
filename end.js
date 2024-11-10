@@ -8,7 +8,7 @@ data = [getCookie('F1'), getCookie('F2'), getCookie('F3'), getCookie('F4'), getC
     getCookie('A1'), getCookie('A2'), getCookie('A3'), getCookie('B1'), getCookie('B2'), getCookie('B3')];
 
 const link = document.createElement("a");
-const file = new Blob([data.join(',\n')], { type: 'text/plain' });
+const file = new Blob([data.join('\n')], { type: 'text/plain' });
 link.href = URL.createObjectURL(file);
 link.download = `${getCookie('testid')}.dat`;
 link.click();
