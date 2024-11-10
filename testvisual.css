@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "Gotham";
+    src: url("gotham_font/GothamMedium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: "Gotham";
+    src: url("gotham_font/GothamMediumItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: "Gotham";
+    src: url("gotham_font/GothamBold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: "Gotham";
+    src: url("gotham_font/GothamBoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gotham";
+    font-size: 20px;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    line-height: 1.5em;
+    margin: 0;
+    width: 90%;
+    max-width: 800px;
+}
+
+.button {
+    padding: 20px 20px;
+    border: solid 2px;
+    margin: 20px 0px;
+}
+
+ul {
+    line-height: 1.5em;
+    margin: 0;
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+.topsep {
+    margin-top: 50px;
+}
+
+.leftsep {
+    margin-left: 50px;
+}
+
+input, select{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type='radio'] {
+    transform: scale(2);
+    margin-top: 20px;
+}
+
+input[type='checkbox'] {
+    transform: scale(2);
+    margin-top: 20px;
+}
+
+input[type='text'] {
+    transform: scale(2);
+    margin-top: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+span {
+    margin-bottom: 5px;
+}
+
+.grid {
+    max-width: 800px;
+    display: grid;
+    gap: 25px 25px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-columns: auto auto;
+}
+
+.griditem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridoption {
+    width: 95%;
+    border: 2px solid white;
+}
+
+.showimg {
+    width: 98%;
+    max-width: 1000px;
+}
+
+.num {
+    font-size: 50px;
+    margin: 0px 10px;
+}
+
+button {
+    margin-top: 40px;
+    padding: 20px 20px;
+    border: solid 4px;
+    font-family: "Gotham";
+    font-size: 32px;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: lightgreen;
+}
+
+h3 {
+    text-align: center;
+    max-width: 90%;
+}

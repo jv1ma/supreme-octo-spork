@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Auditivo</title>
+    <link rel="stylesheet" type="text/css" href="testauditivo.css">
+</head>
+<body>
+    <h1>Test Auditivo</h1>
+    <p id="i">
+        Bienvenido al test de memoria auditiva. Se te realizarán 3 preguntas; antes de cada escucharás 
+        un audio breve y deberás intentar recordar el contenido del mismo.
+        Puedes escuchar el audio cuantas veces quieras.<br>
+        Porfavor no grabes ni anotes el contenido de los audios y responde las preguntas solo en base a lo
+        que recuerdas.
+    </p>
+    <h3 id="q1">Escucha con atención.</h3>
+    <audio controls src="auditive_test/1.mp3" id="q1img"></audio>
+    <h3 id="qq1">¿Cuál de los siguientes corresponde a la melodía anterior?</h3>
+    <div class="column" id="qq1tsk">
+        <audio controls src="auditive_test/2.mp3"></audio><input type="radio" name="q1" id="q1o1"></input>
+        <audio controls src="auditive_test/3.mp3"></audio><input type="radio" name="q1" id="q1o2"></input>
+        <audio controls src="auditive_test/4.mp3"></audio><input type="radio" name="q1" id="q1o3"></input>
+        <audio controls src="auditive_test/5.mp3"></audio><input type="radio" name="q1" id="q1o4"></input>
+    </div>
+    <h3 id="q2">Escucha con atención.</h3>
+    <audio controls src="auditive_test/6.mp3" id="q2img"></audio>
+    <h3 id="qq2">De los 10 pulsos totales, ¿Cuáles de ellos fueron enfatizados?</h3>
+    <div class="row" id="qq2tsk">
+        <div class="column"><span class="num">1</span><input type="checkbox" id="0"></input></div>
+        <div class="column"><span class="num">2</span><input type="checkbox" id="1"></input></div>
+        <div class="column"><span class="num">3</span><input type="checkbox" id="2"></input></div>
+        <div class="column"><span class="num">4</span><input type="checkbox" id="3"></input></div>
+        <div class="column"><span class="num">5</span><input type="checkbox" id="4"></input></div>
+        <div class="column"><span class="num">6</span><input type="checkbox" id="5"></input></div>
+        <div class="column"><span class="num">7</span><input type="checkbox" id="6"></input></div>
+        <div class="column"><span class="num">8</span><input type="checkbox" id="7"></input></div>
+        <div class="column"><span class="num">9</span><input type="checkbox" id="8"></input></div>
+        <div class="column"><span class="num">10</span><input type="checkbox" id="9"></input></div>
+    </div>
+    <h3 id="q3">Escucha con atención.</h3>
+    <audio controls src="auditive_test/7.mp3" id="q3img"></audio>
+    <h3 id="qq3">¿Cuál de los siguientes corresponde a la melodía en el orden inverso?</h3>
+    <div class="column" id="qq3tsk">
+        <audio controls src="auditive_test/8.mp3"></audio><input type="radio" name="q1" id="q2o1"></input>
+        <audio controls src="auditive_test/9.mp3"></audio><input type="radio" name="q1" id="q2o2"></input>
+        <audio controls src="auditive_test/10.mp3"></audio><input type="radio" name="q1" id="q2o3"></input>
+        <audio controls src="auditive_test/11.mp3"></audio><input type="radio" name="q1" id="q2o4"></input>
+    </div>
+    <button id="continue" onclick="continuebutton();">Continuar</button>
+    <div class="column" id="finish">
+        <h3>Haz terminado el test auditivo.</h3>
+        <a class="button" href="end.html"><span>Terminar el Test</span></a>
+    </div>
+    <script src="testauditivo.js"></script>
+</body>
+</html>

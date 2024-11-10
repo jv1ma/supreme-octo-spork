@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Visual</title>
+    <link rel="stylesheet" type="text/css" href="testvisual.css">
+</head>
+<body>
+    <h1>Test Visual</h1>
+    <p id="i">
+        Bienvenido al test de memoria visual. Se te realizarán 3 preguntas; antes de cada una se te mostrará una 
+        imagen por unos segundos y deberás intentar recordar el contenido de la misma.<br><br>
+        Porfavor no tomes foto ni anotes el contenido de las imágenes y responde las preguntas solo en base a lo
+        que recuerdas.
+    </p>
+    <h3 id="q1">Observa con atención la imagen.</h3>
+    <img class="showimg" src="visual_test_images/7.png" id="q1img">
+    <h3 id="qq1">¿Cuál de las siguientes imágenes es idéntica a la imagen previamente mostrada?</h3>
+    <div id="qq1tsk" class="grid">
+        <div class="griditem"><img src="visual_test_images/8.png" class="gridoption"><input type="radio" name="q1" id="q1o1"></input></div>
+        <div class="griditem"><img src="visual_test_images/9.png" class="gridoption"><input type="radio" name="q1" id="q1o2"></input></div>
+        <div class="griditem"><img src="visual_test_images/7.png" class="gridoption"><input type="radio" name="q1" id="q1o3"></input></div>
+        <div class="griditem"><img src="visual_test_images/10.png" class="gridoption"><input type="radio" name="q1" id="q1o4"></input></div>
+    </div>
+    <h3 id="q2">Observa con atención la imagen.</h3>
+    <img class="showimg" src="visual_test_images/11.png" id="q2img">
+    <h3 id="qq2">¿Cuáles eran los números indicados con el asterisco "*"?</h3>
+    <div class="row" id="qq2tsk">
+        <div class="column"><span class="num">0</span><input type="checkbox" id="0"></input></div>
+        <div class="column"><span class="num">1</span><input type="checkbox" id="1"></input></div>
+        <div class="column"><span class="num">2</span><input type="checkbox" id="2"></input></div>
+        <div class="column"><span class="num">3</span><input type="checkbox" id="3"></input></div>
+        <div class="column"><span class="num">4</span><input type="checkbox" id="4"></input></div>
+        <div class="column"><span class="num">5</span><input type="checkbox" id="5"></input></div>
+        <div class="column"><span class="num">6</span><input type="checkbox" id="6"></input></div>
+        <div class="column"><span class="num">7</span><input type="checkbox" id="7"></input></div>
+        <div class="column"><span class="num">8</span><input type="checkbox" id="8"></input></div>
+        <div class="column"><span class="num">9</span><input type="checkbox" id="9"></input></div>
+    </div>
+    <h3 id="q3">Observa con atención la imagen.</h3>
+    <img class="showimg" src="visual_test_images/12.png" id="q3img">
+    <h3 id="qq3">Forma una palabra utilizando las letras indicadas con el guión "-".</h3>
+    <input type="text" placeholder="Ingresa tu palabra aquí" id="qq3tsk"></input>
+    <h1 id="timer">10</h1>
+    <button onclick="continuebutton();" id="continue">Continuar</button>
+    <div class="column" id="finish">
+        <h3>Haz terminado el test visual.</h3>
+        <a class="button" href="testauditivo.html"><span>Ir al Test Audtivo</span></a>
+    </div>
+    <script src="testvisuald.js"></script>
+</body>
+</html>
