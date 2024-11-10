@@ -56,14 +56,14 @@ function checkstg () {
         stage = parseInt(getCookie("STGB"));
     }
     else {
-        document.cookie = `STGB=0; max-age=31536000;`;
+        document.cookie = `STGB=0; max-age=31536000; SameSite=Lax;` 
     }
 }
 
 checkstg();
 
 function update() {
-    document.cookie = `STGB=${stage}; max-age=31536000;`;
+    document.cookie = `STGB=${stage}; max-age=31536000; SameSite=Lax;`;
     if (stage == 0) {
         i.style.visibility = "visible";
     }
@@ -127,9 +127,9 @@ function update() {
         if (q2o2.checked == true) r2 = 2;
         if (q2o3.checked == true) r2 = 3;
         if (q2o4.checked == true) r2 = 4;
-        document.cookie = `B1=${r1}; max-age=31536000;`;
-        document.cookie = `B2=${[c0.checked, c1.checked, c3.checked, c4.checked, c5.checked, c6.checked, c7.checked, c8.checked, c9.checked]}; max-age=31536000;`;
-        document.cookie = `B3=${r2}; max-age=31536000;`;
+        document.cookie = `B1=${r1}; max-age=31536000; SameSite=Lax;`;
+        document.cookie = `B2=${[c0.checked, c1.checked, c3.checked, c4.checked, c5.checked, c6.checked, c7.checked, c8.checked, c9.checked]}; max-age=31536000; SameSite=Lax;`;
+        document.cookie = `B3=${r2}; max-age=31536000; SameSite=Lax;`;
         f.style.visibility = "visible";
         cont.style.visibility = "collapse";
     }
