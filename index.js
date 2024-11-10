@@ -10,6 +10,6 @@ function makeid(length) {
     return result;
 }
 
-document.cookie = `testid=${makeid(20)}; max-age=31536000;`
+document.cookie = `testid=${makeid(20)}; max-age=31536000; SameSite=Lax;`
 
 
