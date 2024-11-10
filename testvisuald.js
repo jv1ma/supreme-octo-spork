@@ -41,7 +41,25 @@ stage = 0;
 timert = 11;
 r1 = 0;
 
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+function checkstg () {
+    if (getCookie("STGA")) {
+        stage = parseInt(getCookie("STGA"));
+    }
+    else {
+        document.cookie = `STGA=0; max-age=31536000;`;
+    }
+}
+
+checkstg();
+
 function update() {
+    document.cookie = `STGA=${stage}; max-age=31536000;`;
     if (stage == 0) {
         i.style.visibility = "visible";
     }
