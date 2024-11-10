@@ -34,7 +34,6 @@ body {
     font-family: "Gotham";
     font-size: 20px;
     margin: 0;
-    overflow: hidden;
 }
 
 h1 {
@@ -138,6 +137,7 @@ span {
 .showimg {
     width: 98%;
     max-width: 1000px;
+    height: auto;
 }
 
 .num {
