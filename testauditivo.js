@@ -113,9 +113,11 @@ function update() {
         document.cookie = `B2=${[c0.checked, c1.checked, c3.checked, c4.checked, c5.checked, c6.checked, c7.checked, c8.checked, c9.checked]}; max-age=31536000;`;
         document.cookie = `B3=${r2}; max-age=31536000;`;
         f.style.visibility = "visible";
+        cont.style.visibility = "collapse";
     }
     else {
         f.style.visibility = "collapse";
+        cont.style.visibility = "visible";
     }
 }
 
