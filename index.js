@@ -16,6 +16,8 @@ function getCookie(name) {
   if (parts.length === 2) return parts.pop().split(';').shift();
 }
 
+console.log(getCookie("testid"));
+
 if (!getCookie("testid")) {
     document.cookie = `testid=${makeid(20)}; max-age=31536000; SameSite=Lax;`
 }
