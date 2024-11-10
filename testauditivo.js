@@ -45,7 +45,25 @@ r2 = 0;
 
 stage = 0;
 
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+function checkstg () {
+    if (getCookie("STGB")) {
+        stage = parseInt(getCookie("STGB"));
+    }
+    else {
+        document.cookie = `STGB=0; max-age=31536000;`;
+    }
+}
+
+checkstg();
+
 function update() {
+    document.cookie = `STGB=${stage}; max-age=31536000;`;
     if (stage == 0) {
         i.style.visibility = "visible";
     }
