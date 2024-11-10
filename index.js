@@ -10,6 +10,12 @@ function makeid(length) {
     return result;
 }
 
+function getCookie(name) {
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
 if (!getCookie("testid")) {
     document.cookie = `testid=${makeid(20)}; max-age=31536000; SameSite=Lax;`
 }
