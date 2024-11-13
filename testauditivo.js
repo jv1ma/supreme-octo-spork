@@ -65,58 +65,58 @@ checkstg();
 function update() {
     document.cookie = `STGB=${stage}; max-age=31536000; SameSite=Lax;`;
     if (stage == 0) {
-        i.style.visibility = "visible";
+        i.style.display = "";
     }
     else {
-        i.style.visibility = "collapse";
+        i.style.display = "none";
     }
     if (stage == 1) {
-        q1.style.visibility = "visible";
-        q1img.style.visibility = "visible";
+        q1.style.display = "";
+        q1img.style.display = "";
     }
     else {
-        q1.style.visibility = "collapse";
-        q1img.style.visibility = "collapse";
+        q1.style.display = "none";
+        q1img.style.display = "none";
     }
     if (stage == 2) {
-        qq1.style.visibility = "visible";
-        qq1tsk.style.visibility = "visible";
+        qq1.style.display = "";
+        qq1tsk.style.display = "";
     }
     else {
-        qq1.style.visibility = "collapse";
-        qq1tsk.style.visibility = "collapse";
+        qq1.style.display = "none";
+        qq1tsk.style.display = "none";
     }
     if (stage == 3) {
-        q2.style.visibility = "visible";
-        q2img.style.visibility = "visible";
+        q2.style.display = "";
+        q2img.style.display = "";
     }
     else {
-        q2.style.visibility = "collapse";
-        q2img.style.visibility = "collapse";
+        q2.style.display = "none";
+        q2img.style.display = "none";
     }
     if (stage == 4) {
-        qq2.style.visibility = "visible";
-        qq2tsk.style.visibility = "visible";
+        qq2.style.display = "";
+        qq2tsk.style.display = "";
     }
     else {
-        qq2.style.visibility = "collapse";
-        qq2tsk.style.visibility = "collapse";
+        qq2.style.display = "none";
+        qq2tsk.style.display = "none";
     }
     if (stage == 5) {
-        q3.style.visibility = "visible";
-        q3img.style.visibility = "visible";
+        q3.style.display = "";
+        q3img.style.display = "";
     }
     else {
-        q3.style.visibility = "collapse";
-        q3img.style.visibility = "collapse";
+        q3.style.display = "none";
+        q3img.style.display = "none";
     }
     if (stage == 6) {
-        qq3.style.visibility = "visible";
-        qq3tsk.style.visibility = "visible";
+        qq3.style.display = "";
+        qq3tsk.style.display = "";
     }
     else {
-        qq3.style.visibility = "collapse";
-        qq3tsk.style.visibility = "collapse";
+        qq3.style.display = "none";
+        qq3tsk.style.display = "none";
     }
     if (stage == 7) {
         if (q1o1.checked == true) r1 = 1;
@@ -130,12 +130,12 @@ function update() {
         document.cookie = `B1=${r1}; max-age=31536000; SameSite=Lax;`;
         document.cookie = `B2=${[c0.checked, c1.checked, c3.checked, c4.checked, c5.checked, c6.checked, c7.checked, c8.checked, c9.checked]}; max-age=31536000; SameSite=Lax;`;
         document.cookie = `B3=${r2}; max-age=31536000; SameSite=Lax;`;
-        f.style.visibility = "visible";
-        cont.style.visibility = "collapse";
+        f.style.display = "";
+        cont.style.display = "none";
     }
     else {
-        f.style.visibility = "collapse";
-        cont.style.visibility = "visible";
+        f.style.display = "none";
+        cont.style.display = "";
     }
 }
 
