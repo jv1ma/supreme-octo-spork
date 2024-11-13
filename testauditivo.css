@@ -34,7 +34,6 @@ body {
     font-family: "Gotham";
     font-size: 20px;
     margin: 0;
-    overflow: hidden;
 }
 
 h1 {
@@ -147,6 +146,7 @@ span {
 
 button {
     margin-top: 40px;
+    margin-bottom: 40px;
     padding: 20px 20px;
     border: solid 4px;
     font-family: "Gotham";
