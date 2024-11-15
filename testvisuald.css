@@ -26,12 +26,17 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: "Avenir";
+    src: url("AvenirLTStd-Medium.otf");
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Gotham";
+    font-family: "Avenir";
     font-size: 20px;
     margin: 0;
 }
